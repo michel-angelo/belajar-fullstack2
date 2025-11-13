@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Plaster&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Plaster&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+hr {
+    width: 80%;
+    margin: 0 auto;
+    opacity: 1.5;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    background-color: #efebe0;
+}
+
+.navbar,
+.hero-section h1,
+.menu-section h2,
+.contact-section h2 {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-weight: bold;
+    font-style: normal;
+    background-color: #005792;
+    color: white;
+}
+
+.navbar-list {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    gap: 10px;
+    list-style-type: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+.navbar h2 {
+    font-size: 20px;
+    color: wheat;
+}
+
+.o-style {
+    color: gold;
+}
+
+.font-25-px {
+    font-size: 25px;
+}
+
+.hero-section {
+    height: 230px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-section h1,
+.hero-section h3 {
+    color: #005792;
+}
+
+.hero-section h3 {
+    margin-top: 10px;
+}
+
+.btn-menu {
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    margin-top: 30px;
+    background: #e07a5f;
+    font-size: 14px;
+    padding: 20px;
+    border: none;
+    border-radius: 50px;
+}
+
+#tombolKirim {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-weight: bold;
+    font-style: normal;
+    background-color: #005792;
+    color: white;
+}
+
+.menu-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-dewa {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.menu-card {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #005792;
+    height: 250px;
+    width: 80%;
+}
+
+.menu-card h3 {
+    font-family: "Cinzel", serif;
+    font-style: normal;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.menu-card h5 {
+    color: black;
+    margin-top: 20px;
+}
+
+.menu-card p {
+    color: wheat;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+.menu-card button {
+    width: 100px;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    margin-top: 10px;
+    background: #e07a5f;
+    font-size: 12px;
+    padding: 20px;
+    border: none;
+    border-radius: 50px;
+    color: wheat;
+}
+
+.contact-section {
+    margin-top: 20px;
+    width: 100%;
+    display: block;
+}
+
+.contact-section h2 {
+    /* display: block; */
+    text-align: center;
+}
+
+.contact-section label {
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+}
+
+.container-btn {
+    text-align: center;
+    margin: 15px;
+}
+
+.contact-section button {
+    background-color: #e07a5f;
+    border: 0;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+@media (min-width: 768px) {
+    .navbar h2 {
+        font-size: 40px;
+    }
+
+    .navbar span {
+        font-size: 50px;
+    }
+
+
+    .navbar-list li {
+        font-size: 25px;
+        margin-right: 20px;
+    }
+
+    .hero-section h1 {
+        font-size: 45px;
+    }
+
+    .hero-section span {
+        font-size: 70px;
+    }
+
+    .menu-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #menu-dewa {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+}

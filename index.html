@@ -3,88 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="about me" />
-    <title>Baby Jesus</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Olympus Mountaffe</title>
   </head>
   <body>
-    <header>
-      <h1>this is me</h1>
-      <h2>Basthatan a.k.a Baby Jesus a.k.a Baß</h2>
+    <header class="header-container">
+      <nav class="navbar">
+        <a href="#">
+          <h2>M<span class="o-style font-25-px">ó</span>untaffe</h2>
+        </a>
+        <ul class="navbar-list">
+          <li>Home</li>
+          <li>Menu</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
     </header>
 
-    <main>
-      <section>
-        <h2>bahkan hades pun menemukan persephone</h2>
-        <img src="https://i.imgur.com/AIRmYdL.png" alt="Foto Profile Penulis" />
-        <p>gaia tempatkan aku di hatimu</p>
-        <p>uranus tak pernah menangis</p>
+    <section class="hero-section">
+      <h1>
+        <span class="o-style">ó</span>lympus M<span class="o-style">ó</span
+        >untaffe
+      </h1>
+      <h3>A place where gods rest and humans dream.</h3>
+      <button class="btn-menu">Lihat Menu</button>
+    </section>
+    <hr />
 
-        <a href="https://github.com/michel-angelo/belajar-fullstack2"
-          >ini pendidikanku</a
-        >
+    <section class="menu-section">
+      <h2>Perjamuan Para Dewa</h2>
+      <div id="menu-dewa"></div>
+    </section>
 
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/uWdHM3-2cpU?si=m1S_sdou-2Ssau9t"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-      </section>
+    <section class="contact-section">
+      <hr />
+      <h2>Bisikan Untuk para Dewa</h2>
+      <form action="kontak" id="contact-form" method="post">
+        <label for="customerName">Siapa yang memanggil Olympus?</label>
+        <input
+          type="text"
+          name="customerName"
+          id="customerName"
+          placeholder="tulislah namamu disini..."
+          required
+        />
+        <label for="customerEmail">Dimana kami bisa membalas bisikanmu?</label>
+        <input
+          type="email"
+          name="customerEmail"
+          id="customerEmail"
+          placeholder="lalu emailmu disini..."
+          required
+        />
+        <label for="customerText">Sampaikan bisikanmu...</label>
+        <textarea
+          name="customerText"
+          id="customerText"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <div class="container-btn">
+          <button id="tombolKirim" type="submit">
+            Sampaikan lewat sayap Hermes
+          </button>
+        </div>
+      </form>
+    </section>
 
-      <section>
-        <table>
-          <thead>
-            <tr>
-              <th>apa</th>
-              <th>bagaimana</th>
-              <th>berapa</th>
-            </tr>
-          </thead>
-
-          <tbody>
-            <tr>
-              <td>petir zeus</td>
-              <td>warisan</td>
-              <td>unlimited</td>
-            </tr>
-
-            <tr>
-              <td>trisula poseidon</td>
-              <td>sebagai hadiah</td>
-              <td>1</td>
-            </tr>
-
-            <tr>
-              <td>helm hades</td>
-              <td>tanda terimakasih</td>
-              <td>3</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-
-      <section>
-        <h2>kontak</h2>
-        <form action="kontak" method="POST">
-          <label for="namLengkap">kusebut apa dirimu?</label>
-          <input type="text" name="nama" id="namLengkap" />
-
-          <label for="userEmail">bisa berikan alamat lainmu?</label>
-          <input type="email" name="email" id="userEmail" />
-
-          <label for="pesanTeks">pesan apa yang ingin kau sampaikan?</label>
-          <textarea name="pesan" id="pesanTeks" cols="9" rows="5"></textarea>
-          <button>tolong kirim ya hermes</button>
-        </form>
-      </section>
-    </main>
-
-    <footer>
-      <p>&copy; Basthatan a.k.a Baby Jesus a.k.a Baß</p>
-    </footer>
+    <footer class="footer">&copy; 2025 Olympus Mountaffe</footer>
+    <script src="script.js"></script>
   </body>
 </html>
